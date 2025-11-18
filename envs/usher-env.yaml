@@ -1,0 +1,10 @@
+name: usher-env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+channel_priority: flexible
+dependencies:
+  - python=3.10
+  - usher=0.6.2
+  - boost-cpp=1.74.0

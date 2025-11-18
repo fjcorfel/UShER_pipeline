@@ -1,0 +1,22 @@
+# == Pipeline mode ==
+# Options: "rescue" or "no-rescue"
+pipeline_mode: "rescue"
+
+# == Main input files (rescue mode) ==
+multifasta: "data/aln.fasta"
+snp_table: "data/snp_table.txt"
+
+# == Main input directory (no-rescue mode) ==
+annof_dir: "data/annoF"
+
+# == Constant files ==
+ref_fasta: "data/MTB_ancestor_reference.fasta"
+bed_mask: "data/R00000039_repregions.bed"
+
+# == Output directories and file names ==
+output_dir: "output"
+usher_output_dir: "output/usher_output"
+
+final_diff: "output/final.diff"
+final_pb_tree: "output/final_tree.pb"
+final_nwk_tree: "output/final_tree.nwk"

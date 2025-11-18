@@ -23,6 +23,11 @@ pip install snakemake
 snakemake --use-conda --cores <cores>
 ```
 
+> [!NOTE]  
+> Dataset de prueba disponible en `salas:/data/fcordero/usher_example/data/`
+
+<br>
+
 ## Descripción de la pipeline
 
 **UShER** toma como input, entre otros, un archivo `.diff` que resume todas las variatnes de cada una de las muestras en la filogenia. Para llegar a este archivo, se pueden seguir 2 procesos distintos, dependiendo de si queremos hacer la filogenia con o sin rescate de variantes.
@@ -30,6 +35,7 @@ snakemake --use-conda --cores <cores>
 ### .diff a partir de multifasta (con rescate)
 
 Archivos necesarios:
+
 - Multi-FASTA
 - SNP table
 - Ref FASTA
@@ -84,11 +90,13 @@ Se concatenan los `.diff` en un único archivo:
 ```shell
 cat *.diff > final_concatenated.diff
 ```
+
 <br>
 
 ### .diff a partir de .annoF (sin rescate)
 
 Archivos necesarios:
+
 - `.annoF` de cada muestra
 - Ref FASTA
 
@@ -165,4 +173,3 @@ En el directorio indicado con `-d`, obtendremos la filogenia final generada en f
 
 > [!NOTE]  
 > Al ejecutar la pipeline con `snakemake`, el árbol final tendrá el nombre que se le dé en `config/config.yaml`.
-

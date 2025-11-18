@@ -2,6 +2,9 @@
 
 ## Cómo ejecutar la pipeline
 
+> [!NOTE]  
+> Dataset de prueba disponible en `salas:/data/fcordero/usher_example/data/`
+
 1. Instalación de `snakemake`:
 
 ```shell
@@ -22,9 +25,6 @@ pip install snakemake
 ```shell
 snakemake --use-conda --cores <cores>
 ```
-
-> [!NOTE]  
-> Dataset de prueba disponible en `salas:/data/fcordero/usher_example/data/`
 
 <br>
 
@@ -172,4 +172,4 @@ usher-sampled -i ref.pb --diff final_concatenated.diff --ref <ref_fasta> -o fina
 En el directorio indicado con `-d`, obtendremos la filogenia final generada en formato Newick: `uncondensed-final-tree.nh`.
 
 > [!NOTE]  
-> Al ejecutar la pipeline con `snakemake`, el árbol final tendrá el nombre que se le dé en `config/config.yaml`.
+> Con `snakemake` el árbol final tendrá el nombre establecido en `config/config.yaml`.

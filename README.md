@@ -20,8 +20,8 @@ pip install snakemake
 
 Establecer en `config/config.yaml` las rutas de los archivos de entrada y de salida. Pueden usarse tanto rutas absolutas como rutas relativas al archivo `snakefile`. Dependiendo de los archivos de entrada, pueden seleccionarse dos modos:
 
-- **Con rescate**: establecer `pipeline_mode: "rescue"` y proporcionar `multifasta` y `snp_table`.
-- **Sin rescate**: establecer `pipeline_mode: "no-rescue"` y proporcionar `annof_dir` (directorio con archivos `.annoF`).
+- **Con rescate**: establecer `pipeline_mode: "rescue"` y proporcionar `multifasta` y `snp_table` en `config/config.yaml`.
+- **Sin rescate**: establecer `pipeline_mode: "no-rescue"` y proporcionar `annof_dir` (directorio con archivos `.annoF`) en `config/config.yaml`.
 
 ### 3. Ejecutar `snakemake`
 
